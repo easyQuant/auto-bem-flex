@@ -23,7 +23,7 @@ const run = async (cb) => {
 }
 
 run((credentials) => {
-    console.log(chalk(files.getCurrentDirectoryBase()))
+    console.log(`当前路径 ${ chalk(files.getCurrentDirectoryBase()) }`)
     const status = new Spinner('正在创建对应布局的组件中 ...');
     status.start();
     render(credentials)
