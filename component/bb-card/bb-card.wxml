@@ -1,0 +1,9 @@
+<!-- component - bb-card -->
+<view class="bb-card" >
+
+    <view class="bb-card__inner" >
+        <text>bb-card__inner</text>
+    </view>
+            
+</view>
+    
