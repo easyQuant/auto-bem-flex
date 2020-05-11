@@ -3,8 +3,8 @@ const figlet = require('figlet');
 const CLI = require('clui');
 const Spinner = CLI.Spinner
 
-const files = require('./src/files');
-const render = require('./src/render')
+const files = require('./lib/files');
+const render = require('./lib/render')
 
 // clear();
 console.log(
@@ -15,7 +15,7 @@ console.log(
 
 console.log(chalk.green('快速创建符合bem-flex 规范的小程序组件和页面'));
 
-const inquirer = require('./src/inquirer');
+const inquirer = require('./lib/inquirer');
 
 const run = async (cb) => {
   const credentials = await inquirer.askGithubCredentials();
